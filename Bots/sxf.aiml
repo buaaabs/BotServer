@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+	<category>
+		<pattern>我 #[最近|近来]? * 心烦 *</pattern>
+		<template>$昵称，你为何心烦？</template>
+	</category>
+	<category>
+		<pattern>我 #[最近|近来]? * 胸闷 *</pattern>
+		<template>
+			您最近休息不大好吧，最近有什么烦心事吗？
+		</template>
+	</category>
+	<category>
+		<pattern>我 * 抑郁 *</pattern>
+		<template>
+			谁都有心情不畅的时候？如果您不介意的话，能说给我听吗？
+		</template>
+	</category>
+	<category>
+		<pattern>你 * 是 * #机器人|智能机器人|AI </pattern>
+		<template>
+			恩，我是由ABS绝对值团队开发的哦啊~我的设计很精巧吧~！
+		</template>
+	</category>
+
+	<category>
+		<pattern></pattern>
+		<template>那您平时都喜欢做点啥啊？</template>
+	</category>
+	<category>
+		<pattern>我 * #喜欢|好|喜好|爱 * </pattern>
+		<that>那您平时都喜欢做点啥啊</that>
+		<template>
+			<think>
+				<set name="喜好"><star index="2" /></set>
+			</think>
+		</template>
+	</category>
+	<category>
+		<pattern></pattern>
+		<template>
+			您平时喜欢什么运动吗？	
+		</template>
+	</category>
+	<category>
+		<pattern>* #不喜欢|不爱|不怎么做|不常 *</pattern>
+		<pattern>*</pattern>
+		<that>您平时喜欢什么运动吗？</that>
+		<template>
+			我到是建议您多运动些啊，生命在于运动，在自己身体状况允许的情况下，多在户外活动，哪怕只是溜溜弯都很有益处哦。
+		</template>
+	</category>
+	<category>
+		<pattern>* #喜欢|做 *</pattern>
+		<pattern>*</pattern>
+		<that>您平时喜欢什么运动吗？</that>
+		<template>
+			那挺不错啊，经常运动对身体非常有益，尤其中老年人来说，运动保健是最好的方式了。
+		</template>
+	</category>
+	<category>
+		<pattern></pattern>
+		<template>
+			您的生日是哪月哪日呢？能告诉我吗？
+		</template>
+	</category>
+	<category>
+		<pattern>* #生日是|是 * 月 * 日</pattern>
+		<that>您的生日是哪月哪日呢 能告诉我吗</that>
+		<template>
+			恩恩，我记住了
+		</template>
+	</category>
+	<category>
+		<pattern></pattern>
+		<template>
+			您平时都几点睡觉呢？
+		</template>
+	</category>
+	<category>
+		<pattern>我睡觉 * 较晚</pattern>
+		<pattern>我睡觉 * 没规律</pattern>
+		<pattern> * 较晚</pattern>
+		<pattern>* 没规律</pattern>
+		<pattern>* 看情况</pattern>
+		<that>您平时都几点睡觉呢</that>
+		<template>
+			哎呀，那可不大好啊，生活有规律是非常重要的啊。
+			我到是建议您每天给自己定一个睡觉的时间，到时候遵守啊。
+		</template>
+	</category>
+	<category>
+		<pattern>我睡觉 * 还行 *</pattern>
+		<pattern>我睡觉 * 规律 *</pattern>
+		<pattern>* 规律 *</pattern>
+		<pattern>* 还行 *</pattern>
+		<pattern>*  *</pattern>
+		<template>
+			那还不错啊，睡眠对人来说也是宝贵的时光啊。生活规律也是非常重要的啊。
+		</template>
+	</category>
+	
+	<category>
+		<pattern>我去年买了个表</pattern>
+		<template>
+			我去年买了个手表！
+		</template>
+	</category>
+
+	<category>
+		<pattern>我勒个去</pattern>
+		<template>
+			肿么了呢？
+		</template>
+	</category>
+
+	<category>
+		<pattern>你心情怎么样</pattern>
+		<template>
+			<random>
+				<li>我心情<get name="emotion"></get></li>
+				<li>我最近很<get name="emotion"></get></li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>我 * #表达|诉说 不满</pattern>
+		<pattern>我 * 诉苦 *</pattern>
+		<template>
+			有不爽的事就说出来嘛！
+		</template>
+	</category>
+	<category>
+		<pattern>* 孩子 * 不孝顺 *</pattern>
+		<template>
+			要想儿女孝顺你，自已要先以身作则孝顺父母。生个不孝顺的孩子，要反省自己有没有孝顺父母...
+		</template>
+	</category>
+
+	<category>
+		<pattern>我 * 咳嗽 *</pattern>
+		<template>
+			咳嗽往往是由感冒引起，中医通常分为风寒感冒和风热感冒两大类型。风寒感冒多表现为发热怕冷，头痛全身痛，鼻塞流清涕，咳嗽痰为白粘痰，舌苔薄白；风热感冒者发热不怕冷，头痛，咽喉痛，咳嗽痰为黄稠脓性痰，舌苔微黄。
+		</template>
+	</category>
+	<category>
+		<pattern>什么是道</pattern>
+		<template>
+			老子所说的道，乃是世界运行的规律，人法地，地法天，天法道，道法自然。
+		</template>
+	</category>
+	<category>
+		<pattern>什么是天地玄黄</pattern>
+		<pattern>天地玄黄 * 什么 *</pattern>
+		<template>
+			指天地的颜色。玄为天色，黄为地色。《易·坤》：“夫玄黄者，天地之杂也，天玄而地黄。
+		</template>
+	</category>
+	<category>
+		<pattern>宇宙洪荒 *</pattern>
+		<template>
+			“宇宙洪荒”出自于《淮南子》与《太玄经》。《淮南子》里说“上下四方叫作宇,古往今来叫作宙”
+		</template>
+	</category>
+	
+	
+</aiml>

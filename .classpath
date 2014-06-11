@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="clojure-1.6.0-sources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="src" path="alice-src"/>
+	<classpathentry kind="lib" path="lib/bsh.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="lib/jcseg/jcseg-analyzer-1.9.3.jar"/>
+	<classpathentry kind="lib" path="lib/jcseg/jcseg-core-1.9.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/workspace/Java/BotServer/lib/mysql-connector-java-5.1.30.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/CLIPSJNI"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
